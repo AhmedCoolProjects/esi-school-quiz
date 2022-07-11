@@ -23,6 +23,7 @@
 			<ModuleCard
 				title={moduleItem.title}
 				id={moduleItem._id}
+				image={moduleItem.image}
 				description={moduleItem.description}
 			/>
 		</div>

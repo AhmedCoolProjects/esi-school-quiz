@@ -1,9 +1,9 @@
 <script lang="ts">
-	export let title: string, description: string, id: string;
+	export let image: string, title: string, description: string, id: string;
 </script>
 
 <div class="card card-compact w-full bg-base-100 shadow-xl">
-	<figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" class="w-full" /></figure>
+	<figure><img src={image} alt={title} class="w-full" /></figure>
 	<div class="card-body">
 		<h2 class="card-title">{title}</h2>
 		<p>{description}</p>
