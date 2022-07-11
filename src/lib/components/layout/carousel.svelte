@@ -48,7 +48,7 @@
   flex-row 
   "
 			>
-				<div class="relative w-1/2 ml-8 ">
+				<div class="relative w-1/2 ml-8 whitespace-normal ">
 					<h1 class="text-md sm:text-3xl font-semibold mb-6">{item.title}</h1>
 					<h1 class="pl-3 text-xs sm:text-base">{item.description}</h1>
 				</div>
