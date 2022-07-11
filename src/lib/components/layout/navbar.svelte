@@ -1,7 +1,7 @@
 <div class="navbar sticky z-50 top-0 shadow-lg bg-base-100">
 	<div class="flex-1">
 		<a href="/" class="btn btn-ghost normal-case text-xl">
-			<img src="favicon.png" alt="logo" class="h-8 w-8" />
+			<img src="/favicon.png" alt="logo" class="h-8 w-8" />
 			ESI Quiz</a
 		>
 	</div>
@@ -12,7 +12,7 @@
 		<div class="dropdown dropdown-end">
 			<label for="user_avatar_container" tabindex="0" class="btn btn-ghost btn-circle avatar">
 				<div id="user_avatar_container" class="w-10 rounded-full">
-					<img alt="user_avatar" src="pngs/account.png" />
+					<img alt="user_avatar" src="/pngs/account.png" />
 				</div>
 			</label>
 			<!-- <ul

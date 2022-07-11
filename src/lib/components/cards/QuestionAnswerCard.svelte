@@ -1,9 +1,24 @@
-<div class="card w-96 bg-base-100 shadow-xl">
+<script lang="ts">
+	export let title: string,
+		questionNumber: number,
+		moduleId: string,
+		id: string,
+		description: string;
+</script>
+
+<div class="card w-full  bg-base-100 shadow-xl">
 	<div class="card-body">
-		<h2 class="card-title">Card title!</h2>
-		<p>If a dog chews shoes whose shoes does he choose?</p>
+		<div class="flex flex-row items-center justify-between">
+			<h2 class="card-title">{title}</h2>
+			<span class="badge">{questionNumber} questions</span>
+		</div>
+
+		<p>{description}</p>
+
 		<div class="card-actions justify-end">
-			<button class="btn btn-primary">Buy Now</button>
+			<a href={`/quiz/${moduleId}-${id}`}>
+				<button class="btn btn-primary">Start Quiz</button>
+			</a>
 		</div>
 	</div>
 </div>

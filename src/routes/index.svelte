@@ -15,6 +15,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>ESI QUIZ</title>
+</svelte:head>
+
 <Carousel />
 <div class="divider text-2xl font-semibold">Modules</div>
 <div class="grid my-4 gap-4 grid-cols-12">
