@@ -3,3 +3,8 @@ export type CarouselDataItemsProps = {
 	description: string;
 	image: string;
 };
+export type QuestionsProps = {
+	question: string;
+	_id: string;
+	answers: { answer: string; isCorrect: boolean }[];
+};

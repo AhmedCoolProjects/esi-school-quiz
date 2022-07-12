@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { appAxios } from '$lib/axios';
-	import QuestionAnswerCard from '$lib/components/cards/QuestionAnswerCard.svelte';
+	import { QuizCard } from '$lib/components';
 	import { onMount } from 'svelte';
 	const id = $page.params.id;
 	let moduleItem: any = {};
@@ -23,7 +23,7 @@
 		<img src={moduleItem.image} alt={moduleItem.title} class="w-56" />
 		<div>
 			<h1 class="text-3xl mb-3 font-bold">{moduleItem.title}</h1>
-			<h1>Module {moduleItem.description}</h1>
+			<h1>{moduleItem.description}</h1>
 		</div>
 	</header>
 {/if}
@@ -34,7 +34,7 @@
 		<div class="grid my-4 gap-4 grid-cols-12">
 			{#each moduleItem.quiz as moduleItemQuiz}
 				<div class="md:col-span-4 col-span-12">
-					<QuestionAnswerCard
+					<QuizCard
 						moduleId={id}
 						id={moduleItemQuiz._id}
 						questionNumber={moduleItemQuiz.questions.length}
