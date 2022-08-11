@@ -6,7 +6,7 @@
 		>
 	</div>
 	<div class="flex-none gap-2">
-		<div class="form-control">
+		<div class="form-control hidden md:flex">
 			<input type="text" placeholder="Search" class="input input-bordered" />
 		</div>
 		<div class="dropdown dropdown-end">
